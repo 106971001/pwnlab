@@ -1,0 +1,6 @@
+break main
+break add_note
+break menu
+disable
+break del_note
+

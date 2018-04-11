@@ -1,0 +1,105 @@
+Gadgets information
+============================================================
+0x0000000000400b23 : add al, 0x89 ; ret 0x458b
+0x00000000004005c6 : add al, byte ptr [rax] ; ret
+0x0000000000400eaf : add bl, dh ; ret
+0x0000000000400ca4 : add byte ptr [rax - 0x77], cl ; ret 0xabe
+0x0000000000400ca1 : add byte ptr [rax], 0 ; add byte ptr [rax - 0x77], cl ; ret 0xabe
+0x00000000004005c4 : add byte ptr [rax], al ; add al, byte ptr [rax] ; ret
+0x0000000000400ead : add byte ptr [rax], al ; add bl, dh ; ret
+0x0000000000400ca2 : add byte ptr [rax], al ; add byte ptr [rax - 0x77], cl ; ret 0xabe
+0x0000000000400eab : add byte ptr [rax], al ; add byte ptr [rax], al ; add bl, dh ; ret
+0x0000000000400eac : add byte ptr [rax], al ; add byte ptr [rax], al ; ret
+0x0000000000400e32 : add byte ptr [rax], al ; add byte ptr [rbx + 0x5d], bl ; ret
+0x0000000000400bee : add byte ptr [rax], al ; add cl, cl ; ret
+0x00000000004007c3 : add byte ptr [rax], al ; add rsp, 8 ; ret
+0x0000000000400bef : add byte ptr [rax], al ; leave ; ret
+0x0000000000400e33 : add byte ptr [rax], al ; pop rbx ; pop rbp ; ret
+0x0000000000400eae : add byte ptr [rax], al ; ret
+0x00000000004005bf : add byte ptr [rbp + 0x1a], dh ; imul ecx, dword ptr [rcx], 0x20000 ; ret
+0x0000000000400e34 : add byte ptr [rbx + 0x5d], bl ; ret
+0x00000000004009a8 : add byte ptr [rcx], al ; ret
+0x0000000000400bf0 : add cl, cl ; ret
+0x0000000000400bed : add dword ptr [rax], eax ; add byte ptr [rax], al ; leave ; ret
+0x00000000004009a4 : add eax, 0x201666 ; add ebx, esi ; ret
+0x0000000000400ac9 : add eax, 0xfffd61e8 ; dec ecx ; ret
+0x000000000040096b : add eax, edx ; sar rax, 1 ; jne 0x40097c ; pop rbp ; ret
+0x00000000004009a9 : add ebx, esi ; ret
+0x0000000000400e2f : add esp, 0xa8 ; pop rbx ; pop rbp ; ret
+0x00000000004007c6 : add esp, 8 ; ret
+0x000000000040096a : add rax, rdx ; sar rax, 1 ; jne 0x40097d ; pop rbp ; ret
+0x0000000000400e2e : add rsp, 0xa8 ; pop rbx ; pop rbp ; ret
+0x00000000004007c5 : add rsp, 8 ; ret
+0x0000000000400944 : and byte ptr [rax], ah ; jmp rax
+0x0000000000400984 : and byte ptr [rax], ah ; jmp rdx
+0x00000000004009a7 : and byte ptr [rax], al ; add ebx, esi ; ret
+0x0000000000400e89 : call qword ptr [r12 + rbx*8]
+0x0000000000401143 : call qword ptr [rdx]
+0x0000000000400e8a : call qword ptr [rsp + rbx*8]
+0x00000000004009cd : call rax
+0x0000000000400b68 : clc ; cmp eax, dword ptr [rbp - 0x1c] ; jl 0x400b06 ; leave ; ret
+0x0000000000400b67 : clc ; cmp eax, dword ptr [rbp - 0x1c] ; jl 0x400b07 ; leave ; ret
+0x000000000040096f : clc ; jne 0x400978 ; pop rbp ; ret
+0x000000000040092d : cmp eax, 0xe ; mov rbp, rsp ; ja 0x400940 ; pop rbp ; ret
+0x0000000000400b69 : cmp eax, dword ptr [rbp - 0x1c] ; jl 0x400b05 ; leave ; ret
+0x0000000000400ace : dec ecx ; ret
+0x0000000000400e8c : fmul qword ptr [rax - 0x7d] ; ret
+0x0000000000400940 : hlt ; pop rbp ; mov edi, 0x602010 ; jmp rax
+0x0000000000401119 : idiv bh ; jmp qword ptr [rax]
+0x00000000004005c2 : imul ecx, dword ptr [rcx], 0x20000 ; ret
+0x0000000000400b6b : in al, 0x7c ; xchg eax, ecx ; leave ; ret
+0x0000000000400933 : ja 0x40093a ; pop rbp ; ret
+0x000000000040093f : je 0x40093d ; pop rbp ; mov edi, 0x602010 ; jmp rax
+0x0000000000400b6c : jl 0x400b02 ; leave ; ret
+0x000000000040111b : jmp qword ptr [rax]
+0x0000000000400947 : jmp rax
+0x0000000000400987 : jmp rdx
+0x00000000004005c0 : jne 0x4005e4 ; imul ecx, dword ptr [rcx], 0x20000 ; ret
+0x0000000000400970 : jne 0x400977 ; pop rbp ; ret
+0x0000000000400acf : leave ; ret
+0x00000000004009a3 : mov byte ptr [rip + 0x201666], 1 ; ret
+0x0000000000400bec : mov eax, 1 ; leave ; ret
+0x0000000000400b66 : mov eax, dword ptr [rbp - 8] ; cmp eax, dword ptr [rbp - 0x1c] ; jl 0x400b08 ; leave ; ret
+0x00000000004009cb : mov ebp, esp ; call rax
+0x0000000000400931 : mov ebp, esp ; ja 0x40093c ; pop rbp ; ret
+0x00000000004009c5 : mov edi, 0x601d50 ; mov rbp, rsp ; call rax
+0x0000000000400942 : mov edi, 0x602010 ; jmp rax
+0x0000000000400982 : mov edi, 0x602010 ; jmp rdx
+0x0000000000400e87 : mov edi, edi ; call qword ptr [r12 + rbx*8]
+0x0000000000400e86 : mov edi, r15d ; call qword ptr [r12 + rbx*8]
+0x0000000000400980 : mov esi, eax ; mov edi, 0x602010 ; jmp rdx
+0x00000000004009ca : mov rbp, rsp ; call rax
+0x0000000000400930 : mov rbp, rsp ; ja 0x40093d ; pop rbp ; ret
+0x000000000040097f : mov rsi, rax ; mov edi, 0x602010 ; jmp rdx
+0x0000000000400ea8 : nop dword ptr [rax + rax] ; ret
+0x0000000000400e9c : pop r12 ; pop r13 ; pop r14 ; pop r15 ; ret
+0x0000000000400e9e : pop r13 ; pop r14 ; pop r15 ; ret
+0x0000000000400ea0 : pop r14 ; pop r15 ; ret
+0x0000000000400ea2 : pop r15 ; ret
+0x00000000004009a2 : pop rbp ; mov byte ptr [rip + 0x201666], 1 ; ret
+0x0000000000400941 : pop rbp ; mov edi, 0x602010 ; jmp rax
+0x000000000040097e : pop rbp ; mov rsi, rax ; mov edi, 0x602010 ; jmp rdx
+0x0000000000400e9b : pop rbp ; pop r12 ; pop r13 ; pop r14 ; pop r15 ; ret
+0x0000000000400e9f : pop rbp ; pop r14 ; pop r15 ; ret
+0x0000000000400935 : pop rbp ; ret
+0x0000000000400e35 : pop rbx ; pop rbp ; ret
+0x0000000000400ea3 : pop rdi ; ret
+0x0000000000400ea1 : pop rsi ; pop r15 ; ret
+0x0000000000400e9d : pop rsp ; pop r13 ; pop r14 ; pop r15 ; ret
+0x00000000004009c4 : push rbp ; mov edi, 0x601d50 ; mov rbp, rsp ; call rax
+0x00000000004005c8 : ret
+0x0000000000400b25 : ret 0x458b
+0x0000000000400a8e : ret 0x8b48
+0x0000000000400ca7 : ret 0xabe
+0x0000000000400965 : ret 0xc148
+0x000000000040096c : ror byte ptr [rax - 0x2f], 1 ; clc ; jne 0x40097b ; pop rbp ; ret
+0x000000000040096e : sar eax, 1 ; jne 0x400979 ; pop rbp ; ret
+0x000000000040096d : sar rax, 1 ; jne 0x40097a ; pop rbp ; ret
+0x00000000004005c1 : sbb ch, byte ptr [rcx + 9] ; add byte ptr [rax], al ; add al, byte ptr [rax] ; ret
+0x0000000000400eb5 : sub esp, 8 ; add rsp, 8 ; ret
+0x0000000000400eb4 : sub rsp, 8 ; add rsp, 8 ; ret
+0x0000000000400e31 : test al, 0 ; add byte ptr [rax], al ; pop rbx ; pop rbp ; ret
+0x0000000000400eaa : test byte ptr [rax], al ; add byte ptr [rax], al ; add byte ptr [rax], al ; ret
+0x0000000000400b6d : xchg eax, ecx ; leave ; ret
+
+Unique gadgets found: 101
