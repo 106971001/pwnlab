@@ -1,4 +1,5 @@
-AutoScan
+358
+Autoscan
 {
 }
 
@@ -13,20 +14,22 @@ MissileHit
 
 FoundRobot
 {
+    print( "FoundRobot" )
 }
-
+pinged
+{
+    print( "Pinged from" _cldbearing "heading" _cldheading )
+}
+ 
 Dead
 {
 }
 
-Pinged
+init
 {
-    print( "Pinged from" _cldbearing "heading" _cldheading )
-}
-
-    regcldmissile( "MissileHit", 1 )
+    print( "asd") 
+    regping( "Pinged", 1 )     
     regdtcrobot( "FoundRobot", 2 )
     regascan( "AutoScan", 3 )
-    regping( "Pinged", 1 )
-
+    regcldmissile( "MissileHit", 4 )
 }
