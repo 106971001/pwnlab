@@ -1,4 +1,0 @@
-break main
-break *0x8048ba2
-break *0x8048c7e
-
