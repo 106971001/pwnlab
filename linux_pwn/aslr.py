@@ -7,4 +7,4 @@ if len(sys.argv) < 2:
 elif sys.argv[1] == '0':
 	os.system('echo 0 | sudo tee /proc/sys/kernel/randomize_va_space')
 elif sys.argv[1] == '2':
-	os.system('echo 0 | sudo tee /proc/sys/kernel/randomize_va_space')
+	os.system('echo 2 | sudo tee /proc/sys/kernel/randomize_va_space')
